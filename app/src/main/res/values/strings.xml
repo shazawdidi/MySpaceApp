@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MySpace</string>
+    <string name="input_text">Search Company</string>
+    <string name="button_send">Go!</string>
+</resources>

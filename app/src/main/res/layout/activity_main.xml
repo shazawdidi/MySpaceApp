@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+    android:background="#C2DFDF"
+     android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:inputType="text"
+         android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/input_text"
+        android:textColorHint="@color/grey"
+        android:imeOptions="actionGo"
+        android:layout_margin="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableEnd="@drawable/my_icon"
+        android:background="@drawable/edit_text"
+        android:imeActionLabel="@string/button_send"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>
