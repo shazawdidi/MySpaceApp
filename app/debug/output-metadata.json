@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.task.myspaceapp",
+  "applicationId": "com.task_test.myspaceapp",
   "variantName": "debug",
   "elements": [
     {

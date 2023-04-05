@@ -3,24 +3,35 @@ plugins {
 }
 
 android {
-    namespace 'com.task.myspaceapp'
+    namespace 'com.task_test.myspaceapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.task.myspaceapp"
+        applicationId "com.task_test.myspaceapp"
         minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        debug {
+            storeFile file("D:\\mine\\myspace.jks")
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
     }
 
     buildTypes {
         release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+         }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
